@@ -1,0 +1,89 @@
+:root{
+    --primary-color: #009cde;
+}
+
+main {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 0 3px 3px black;
+    padding: 0.67rem;
+    margin: 1.33rem auto;
+    max-width: 35rem;
+} 
+
+
+
+form > fieldset{
+    border-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1.33rem;
+    padding: 0;
+}
+
+/* form > fieldset > div.input{
+
+}
+ */
+ form fieldset label, div.input {         
+    flex-grow: 1;
+}
+form fieldset label {
+    align-self: start;        
+    flex-basis: 8rem;
+    font-weight: bold;
+    margin-top: 0.66rem;
+    margin-bottom: 0.66rem;
+}
+
+form > fieldset > p{
+    align-self: start;        
+    flex-basis: 15rem;
+    font-weight: bold;
+    margin-top: 0.66rem;
+}
+
+form input[type=email], form input[type=password]{
+    padding: 0.67rem;
+    box-sizing: border-box;
+    font-size: medium;
+    width: 100%;
+}
+
+form .button-flex {
+    border: none;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: white;
+    cursor: pointer;
+    flex-grow: 1;
+    font-size: large;
+    font-weight: bold;
+    margin: 0.33rem 0;
+    padding: 0.67rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+form p.warning-text {
+    color: red;
+    font-weight: bold;
+    margin: 0;
+}
+
+form p.warning-text.hidden {
+    display: none;
+}
+form p.warning-text::before {
+    content: "⚠ ";
+}
+
+main>h3{
+    margin: 0.33rem;
+    text-align: center;
+}
+
+main a{
+    text-decoration: none;
+}

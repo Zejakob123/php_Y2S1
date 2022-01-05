@@ -1,0 +1,321 @@
+:root{
+    --cornsilk: #FEFAE0;
+    --pale-spring-bbud: #CCD5AE;
+    --gunmetal: #293241;
+    --burnt-sienna: #EE6C4D;
+    --rufous: #ae2012;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--cornsilk);
+}
+
+body>section{
+    font-size: x-large;
+    width: 100%;
+    height: 30px;
+    background-color:#a5a58d;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body>section>header{
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    flex-grow: 1;  
+    color: white; 
+}
+
+body>section>a{
+    text-decoration: none;
+    margin: 0;
+    margin:0;
+    text-align: center;
+    flex-grow: 1;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #fca311;
+    cursor: pointer;
+    color: blue;
+}
+
+body>section>a:hover{
+    background-color: #fec89a;
+}
+
+
+body>main{
+    width: 1000px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-top: 20px;
+    padding-bottom: 120px;
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--pale-spring-bbud);
+    margin-top: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+main>div{
+    text-align: center;
+}
+
+section{
+    margin-left: auto;
+    margin-right: auto;
+    /* flexible container */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+form{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+form>div{
+    padding: 10px 0;
+    height: 50px;
+    /* flex style */
+    flex-basis: 206px;
+    flex-grow: 1;
+}
+form div label{
+    width: 250px;
+    border: indianred;
+    display: inline-flex;
+    margin-left: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+form div label ~ input{
+    display: inline-block;
+}
+
+form div input[type="radio"]{
+    width: fit-content;
+}
+
+form div label p{
+    padding: 0;
+    margin: 0;
+    width: 210px;
+    display: inline-block;
+}
+
+form div label img{
+    width: 20px;
+    height: 20px;
+    /* border: 1px solid black; */
+    display: inline-block;
+}
+
+form div input[type="text"], form div input[type="password"]{
+    width: 200px;
+    outline: none;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+form div input[disabled][value="+60"]{
+    width: 50px;
+    background-color: beige;
+}
+
+form div input#user_mobile_input{
+    width: 140px;
+}
+
+form div label.gender_label_class{
+    width: 60px;
+}
+
+form div select{
+    width: 200px;
+    border-radius: 5px;
+    background-color: beige;
+}
+
+form div input + p, form div select + p{
+    font-size: 10px;
+    font-style: italic;
+    color: var(--rufous);
+    margin-left: 280px;
+    padding: 0;
+}
+
+form div>div{
+    padding-bottom: 0;
+}
+
+form div>div+p{
+    font-size: 10px;
+    font-style: italic;
+    color: var(--rufous);
+    padding: 0;
+}
+
+form input[type="submit"]{
+    border-radius: 10px;
+    background-color: var(--gunmetal);
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+}
+
+form input[type="button"]{
+    border-radius: 10px;
+    background-color: var(--gunmetal);
+    color: white;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    float: right;
+    margin-top: 5px;
+}
+
+form div input:focus, form div input:active{
+    border: 2px solid var(--rufous);
+    outline: none;
+}
+
+form div div input[type="checkbox"]{
+    display: inline-block;
+    padding-bottom: 0;
+}
+
+form div div input[type="checkbox"]:focus-within{
+    outline: 2px solid var(--rufous);
+    
+}
+
+form div div span{
+    padding-left: 20px;
+    padding-bottom: 0;
+    display: inline-block;
+}
+
+@media only screen and (max-width: 1253px) and (min-width: 200px){
+    main{
+        width:fit-content
+    }
+}
+
+@media only screen and (max-width: 736px){
+    main{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media only screen and (max-width: 534px){
+
+    
+
+    main section form input[type="submit"],  main section form input[type="button"], main section form input[type="text"], 
+    main section form input[type="password"],  main section form select{
+        width: 100%;
+    }
+    
+    form div input[disabled][value="+60"]{
+        width: 30%;
+    }
+    
+    form div input#user_mobile_input{
+        width: 100%;
+    }
+
+    form div div span{
+        padding: 0 0;
+        display: inline-block;
+        
+    }
+
+
+}
+
+main>form.login-form fieldset{
+    border-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 1.33rem;
+    padding: 0;
+}
+
+main>form.login-form fieldset label {         
+    flex-grow: 1;
+}
+
+main>form.login-form fieldset label {
+    align-self: start;        
+    flex-basis: 8rem;
+    font-weight: bold;
+    margin-top: 0.66rem;
+}
+
+
+main>form.login-form input{
+    max-width: 100%;
+    /* flex-basis: 27rem; */
+    padding: 0.67rem;
+    font-size: medium;
+    flex-grow: 3;
+}
+
+main>form.login-form input.button-login{
+    cursor: pointer;
+    flex-grow: 1;
+    font-size: large;
+    font-weight: bold;
+}
+
+main>form.login-form .button-login:hover{
+    background-color: #6c757d;
+    color: black;
+}
+
+main>form.login-form a.back-login{
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    font-weight: bold; 
+    width: 100%;
+    background-color:rgb(192, 21, 55);
+    color: white;
+    margin-top: 10px;
+    border-radius: 8px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 0.67rem;
+    flex-grow: 1;
+    font-size: large;
+}
+
+main>form.login-form a.back-login:hover{
+    background-color: rgb(240, 150, 168);
+    color:black;
+}
+
+/* for table */
+main table{
+    border: 1px solid black;
+    border-radius: 20px;
+}
+ main table td{
+     padding:10px 12px; 
+ }
